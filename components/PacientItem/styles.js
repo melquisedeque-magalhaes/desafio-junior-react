@@ -7,30 +7,26 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center; 
     flex-direction: column;
-    
-    tr{
-        //display: flex;
-        //align-items: center;
-       // justify-content: center;
-        border: 3px solid;
-        border-color: black;
-    }
-    td{
-        //display: flex;
-        //align-items: center;
-       // justify-content: center;
-        border: 3px solid;
-        border-color: black;
+    padding: 64px 0px;
+
+    table {
+        width: 50%;
+        //border-spacing: 0 0.5rem;
+        border: 1px solid black;
+        table-layout: fixed;
+        text-align: center;
+        background: #666;
+        
+        thead {
+            background: #ccc;
+        }
+
+        tbody {
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        }
+
     }
 `;
 
-export const Tr = styled.tr`
-        border: 3px solid;
-        border-color: black;
-       // align-items: center;
-        `;
-        export const Td = styled.td`
-        border: 3px solid;
-        border-color: black;
-       // align-items: center;
-        `;

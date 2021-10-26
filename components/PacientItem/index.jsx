@@ -37,19 +37,19 @@ function PacientItem() {
                 </tr>
               </thead>
               <tbody>
-                  {users?.map((user) => (
-                    <TableOne 
-                      key={user.login.uuid}
-                      picture={user.picture.large}
-                      name={user.name.first}
-                      nameComplete={`${ user.name.first } ${ user.name.last }`}
-                      gender={user.gender}
-                      dateFirst={format(new Date(String(user.dob.date)), "dd-MM-yyyy")}
-                      setPage={handleNextPage}
-                    />
-  
-                    ))}
-                </tbody>
+                {users?.map((user) => (
+                  <TableOne 
+                    key={user.login.uuid}
+                    picture={user.picture.large}
+                    name={user.name.first}
+                    nameComplete={`${ user.name.first } ${ user.name.last }`}
+                    gender={user.gender}
+                    dateFirst={format(new Date(String(user.dob.date)), "dd-MM-yyyy")}
+                    setPage={handleNextPage}
+                  />
+
+                  ))}
+              </tbody>
           </table>
 
           {loading ? 
