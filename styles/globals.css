@@ -1,0 +1,22 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 16px;
+  margin: 0;
+  /* height: 100%;
+  width: 100vw; */
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
